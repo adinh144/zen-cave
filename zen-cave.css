@@ -1,11 +1,12 @@
 .header {
     background-color: #1F2937;
+    display: flex;
     justify-content: space between;
 }
 
 html, body {
-    margin:0;
-    padding:0;
+    margin:0px;
+    padding:0px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -22,11 +23,12 @@ html, body {
 
 ul {
     display:flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content:flex-end;
     align-items:center;
+    align-content: center;
     flex: 1;
-    font-weight:250;
+    font-weight:400px;
     color: #E5E7EB;
     font-size:20px;
     list-style: none;
@@ -39,6 +41,7 @@ li {
 
 .header-logo {
 display: flex;
+flex-wrap: nowrap;
 font-size: 24px;
 color: #F9FAF8;
 font-weight:bold;
@@ -47,41 +50,29 @@ font-weight:bold;
 
 .intro {
     display:flex;
-    justify-content: center;
-    padding: 100px 300px 100px 300px;
-    flex: 1;
+    flex-direction:row;
+    justify-content:center;
+    background-color:#1F2937;  
+    padding:100px 350px 100px 350px;
+    overflow: hidden;
 }
 
 .hero-text {
-    font-size:18px;
     color: #E5E7EB;
     display:flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     flex: auto;
     align-self:center;
-    justify-items: stretch;
-    
+    margin:22px 44px 22px 22px;
+}
+.hero-heading {
+    font-size:48px;
 }
 
-.hero-main {
-    font-size: 48px;
-    font-weight:900;
-    margin-right:24px;
-    min-width:350px;
-}
-
-.hero-secondary {
-font-size:20px;
-color: #E5E7EB
-margin-top: 24px;
-margin-bottom: 24px;
-}
-
-img {
-    display:flex;
-    
-    width:700px;
-    height: 300px;
+.sub-text {
+    font-size:18px;
+    margin-top:22px;
+    margin-bottom:22px;
 }
 
 .information-header-text {
@@ -93,6 +84,14 @@ img {
     font-weight: 900;
 }
 
+img {
+    display:flex;
+    min-width: 444px;
+    max-width: 666px;
+    height: auto;
+    border-radius: 10px;
+}
+
 .box-wrapper {
     display: flex;
     flex-flow: row wrap;
@@ -102,6 +101,9 @@ img {
     margin-bottom:22px;
     gap:88px;  
     text-align: center;
+    margin-left:22px;
+    margin-right:22px;
+    
 }
 
 .textbox1 {
@@ -214,6 +216,7 @@ flex-direction: column;
 justify-content:center;
 align-content: center;
 padding: 150px 350px 100px 350px;
+overflow: hidden;
 }
 
 .quote {
@@ -237,46 +240,51 @@ margin-right: 50px;
 
 .cta {
     display:flex;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #3882F6;
     border-radius: 7px 7px 7px 7px;
-    margin: 111px 265px 111px 265px;
-    padding: 55px 0px 55px 0px;
+    margin: 111px 220px 111px 220px;
+    padding: 66px 40px 66px 40px;
 }
 
-.cta-text {
-    font-size: 20px;
+.text-1 {
+    font-size: 21px;
     color: #E5E7EB;
-    
-   
+    display:flex;
+    flex-wrap: nowrap;
+    margin-bottom: 12px;
+}
+
+.text-2 {
+    display:flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    color: #E5E7EB;
+    font-size: 19px;
 }
 
 button {
     background-color: #3882F6;  
+    border:3px solid #3882F6;
     box-sizing:content-box;
     color: #E5E7EB;
-    border:#3882F6;
-    font-weight: 700;
-    font-size:16px;
-    border-radius: 5px 5px 5px 5px;
-    margin-right: 850px;
+    font-weight: 900;
+    font-size:18px;
+    border-radius: 5px;
     display:flex;
     flex-wrap: wrap;
     width: 90px;
     justify-content: center;
-    padding:4px;
+    padding:6px 10px 6px 10px;
 }
 
-.button2 {
-    display: flex;
-    align-self:center;
-    justify-content: flex-end;
-    border:#F9FAF8;
-    padding: 12px 0px 12px 199px;
-    margin: 6px 12px 6px 12px;
+.sign-up {
     color:#F9FAF8;
-    min-width:77px;
+    border: 3px solid #E5E7EB;
+    border-radius: 5px;
+    margin:32px 32px 0px 32px;
 }
 
 .footer {
