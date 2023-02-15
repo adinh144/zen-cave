@@ -84,12 +84,16 @@ font-weight:bold;
     font-weight: 900;
 }
 
-img {
-    display:flex;
+#main-img {
+    
     min-width: 444px;
     max-width: 666px;
-    height: auto;
+
+
+}
+img {
     border-radius: 10px;
+    width: 100%
 }
 
 .box-wrapper {
@@ -245,8 +249,12 @@ margin-right: 50px;
     align-items: center;
     background-color: #3882F6;
     border-radius: 7px 7px 7px 7px;
-    margin: 111px 220px 111px 220px;
+    margin: 111px 240px 111px 240px;
     padding: 66px 40px 66px 40px;
+}
+
+.cta-text {
+    font-size: 20px;
 }
 
 .text-1 {
